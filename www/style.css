@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#page1{
+    width: 980px;
+    height: 100%;
+}
+#container{
+    width: 100%;
+    height: 80%;
+    background-image:url(/img/bg.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+}
+#header{
+    width:100%;
+    height: 25%;
+}
+.blankArea{
+    height: 25%;
+    width:100%;
+    border:0px;
+}
+#promotArea{
+     width:100%;
+    height: 25%;
+    background: black;
+    opacity: 0.2;
+}
+#ContactArea{
+    width: 100%;
+    height: 20%;
+}
+.horizontalUl>li{ 
+    float:left;
+    list-style:none;
+    width: 150px;
+    height:150px;
+    margin-left: 250px;
+    margin-top: 90px;
+}
+#localContact{
+
+}
+#cloudContact{
+
+}
+
