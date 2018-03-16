@@ -28,5 +28,5 @@ function onError(contactError) {
 var options = new ContactFindOptions();
 options.filter = "";
 options.multiple = true;
-var filter = ["displayName", "addresses"];
+filter = ["displayName", "name"];
 navigator.contacts.find(filter, onSuccess, onError, options);
