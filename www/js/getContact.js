@@ -37,6 +37,6 @@ filter = ["displayName", "name"];
 navigator.contacts.find(filter, onSuccess, onError, options);
 
 function createContact(){
-    var myContact = navigator.contacts.create({"displayName": "Test User"});
     alert("success!");
+    var myContact = navigator.contacts.create({"displayName": "Test User"});
 }
