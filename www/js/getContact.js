@@ -2,13 +2,13 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     console.log(navigator.contacts);
 }
-/*
+
 $(document).on("pagecreate","#lcpage",function(){
   $('#bt1').on("click", function(){
-    showContact();
+    onSuccess(contacts)
   });            
 });           
-*/
+
 
 function onSuccess(contacts) {
     for (var i = 0; i < contacts.length; i++) {
