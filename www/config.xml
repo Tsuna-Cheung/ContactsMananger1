@@ -21,6 +21,9 @@
     <preference name="permissions"                value="none"/>   
 	
 	<access origin="*"/>
+    <edit-config target="NSContactsUsageDescription" file="*-Info.plist" mode="merge">
+        <string>need contacts access to search friends</string>
+    </edit-config>
    	<plugin name="cordova-plugin-whitelist" version="1" />
    	<plugin name="cordova-plugin-contacts" spec="~3.0.1" />
 </widget>

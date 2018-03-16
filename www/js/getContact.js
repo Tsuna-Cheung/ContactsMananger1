@@ -5,9 +5,14 @@ function onDeviceReady() {
 
 $(document).on("pagecreate","#lcpage",function(){
   $('#bt1').on("click", function(){
-    onSuccess(contacts)
+    onSuccess(contacts);
   });            
-});           
+});  
+$(document).on("pagecreate","#lcpage",function(){
+  $('#bt2').on("click", function(){
+    createContact();
+  });            
+});   
 
 
 function onSuccess(contacts) {
@@ -30,3 +35,8 @@ options.filter = "";
 options.multiple = true;
 filter = ["displayName", "name"];
 navigator.contacts.find(filter, onSuccess, onError, options);
+
+function createContact(){
+    var myContact = navigator.contacts.create({"displayName": "Test User"});
+    alert("success!");
+}
