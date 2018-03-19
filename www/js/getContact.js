@@ -1,6 +1,15 @@
 document.addEventListener("deviceready", onDeviceReady, false);
+
 function onDeviceReady() {
     console.log(navigator.contacts);
+    
+    var options = new ContactFindOptions();
+options.filter = "";
+options.multiple = true;
+filter = ["displayName", "name"];
+navigator.contacts.find(filter, onSuccess, onError, options);
+    
+    
 }
 
 $(document).on("pagecreate","#lcpage",function(){
@@ -30,11 +39,7 @@ function onError(contactError) {
     alert('onError!');
 };
 
-var options = new ContactFindOptions();
-options.filter = "";
-options.multiple = true;
-filter = ["displayName", "name"];
-navigator.contacts.find(filter, onSuccess, onError, options);
+
 
 function createContact(){
     alert("success!");
